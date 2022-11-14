@@ -76,6 +76,155 @@
             &lt;sup&gt; Superscript - The text is set slightly upper than the normal line of type. &lt;/sup&gt; <sup>Superscript - The text is set slightly upper than the normal line of type.</sup><br>
 
         </p>
+
+        <h2>Examples:</h2>
+
+        <p>
+            <b>Lorem ipsum</b> dolor sit <strong>amet</strong>, consectetur adipisicing <i>elit</i>. Quo aspernatur veniam porro
+            sint odit in ea <em>repellendus</em>. <mark>Quaerat officiis magni</mark> numquam <small>minus</small>, blanditiis
+            a id <strike>dolore</strike> cumque ullam corrupti at. <strong>25<sup>o</sup></strong>
+        </p>
+
+        <!-- Links -->
+
+        <h2>Adding Links</h2>
+
+        <p>
+            Links allow us to navigate around a document and also  around web.<br>
+            Link information is placed inside an anchor element: &lt;a&gt; Anchor - Hyperlink to another internal or external resource. &lt;/a&gt;<br>
+
+            Lorem ipsum <a href="htmlbasics.html">dolor sit</a> amet consectetur adipisicing elit. Veritatis aspernatur minima beatae dolore sit, laboriosam aut
+            recusandae, <a href="https://www.google.com/" target="_blank">deserunt</a> culpa nemo eveniet vel excepturi. Facilis odit quibusdam suscipit provident, deleniti ex?
+        </p>
+
+        <!-- Lists -->
+
+        <!-- Unordered lists are displayed as a block. Use bullet points to display items. -->
+        <h2>Unordered Lists</h2>
+
+        <p>
+            <ul>
+                <li>Ul item 1</li>
+                <li>Ul item 2</li>
+                <li>Ul item 3</li>
+            </ul>
+        </p>
+
+        <!-- Ordered lists are displayed as a block. Use numbers, letters, etc to display items. -->
+        <h2>Ordered Lists</h2>
+
+        <p>
+            <ol>
+                <li>Ol item 1</li>
+                <li>Ol item 2</li>
+                <li>Ol item 3</li>
+            </ol>
+        </p>
+
+        <h2>Description Lists</h2>
+
+        <p>
+            <dl>
+                <dt>Item 1</dt> <!-- dt - Description Term -->
+                <dd>The definition of item 1</dd> <!-- dd - Description Definition -->
+                <dt>Item 2</dt>
+                <dd>The definition of item 2</dd>
+            </dl>
+        </p>
+
+        <!-- Tables -->
+
+        <h2>Tables</h2>
+        
+        <!-- Create table -->
+        <table>
+
+            <!-- thead hold the columns header -->
+            <thead>
+
+                <!-- Defines a row -->
+                <tr>
+                    <!-- th Defines a head -->
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Ann Other</td>
+                    <td>annother@email.com</td>
+                    <td>35</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>John Doe</td>
+                    <td>john@email.com</td>
+                    <td>57</td>
+                    <td>M</td>
+                </tr>
+
+                <tr>
+                    <td>Terry Magoo</td>
+                    <td>terry@email.com</td>
+                    <td>27</td>
+                    <td>O</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <br> <!-- Line Break -->
+        <hr> <!-- Horizontal Rule -->
+        <br> <!-- Line Break -->
+
+        <!-- Forms -->
+
+        <!-- action - Specifies where to send the form-data when a form is submitted -->
+        <!-- method - Specifies the HTTP method to use when sending form-data -->
+        <!-- post - Sends the form-data as an HTTP post transaction -->
+        <form action="process.php" method="post">
+
+            <fieldset>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="firstName">
+            </fieldset>
+
+            <fieldset>
+                <label for="last_name">Surname:</label>
+                <input type="text" name="last_name" id="lastName">
+            </fieldset>
+
+            <fieldset>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="emailAddress"> <!-- type email, auto validation to accept just email format -->
+            </fieldset>
+
+            <fieldset>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="ageVal" value="18">
+            </fieldset>
+
+            <fieldset>
+                <label for="message">Message:</label>
+                <textarea name="message" id="messageText"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="message">Gender:</label>
+                <select name="gender" id="">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+        </form>
         
     </body>
 
