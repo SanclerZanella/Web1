@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "web1"
+    "liveServer.settings.multiRootWorkspaceName": "web1",
+    "liveServer.settings.CustomBrowser": "chrome"
 }
